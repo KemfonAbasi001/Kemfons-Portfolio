@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  background-color: #1D1D1D;
+  color: #0f0f0f;
+  font-family: "Geist", sans-serif;
+}
+
+
+@theme {
+  /* --font-fira: "Fira Code", monospace; */
+  --font-inter: "Inter", sans-serif;
+
+  --font-syne: "Syne", sans-serif;
+
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+
+a{
+  text-decoration: none;
+  /* color: #929292 */
+;
+}
