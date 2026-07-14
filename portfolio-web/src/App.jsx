@@ -3,7 +3,7 @@
 // // import AvailableForWorkButton from "./pages/SelectedWork"
 
 import { Beforefooter, Footerpage } from "./components/Footer"
-// import Landingpage from "./pages/Landingpage"
+import Landingpage from "./pages/Landingpage"
 import Processpage from "./pages/Process"
 // import Workpage from "./pages/SelectedWork"
 import TechStack from "./pages/Techstack"
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     {/* <Coverpage/> */}
-    {/* <Landingpage/> */}
+    <Landingpage/>
     {/* <Workpage/> */}
     <TechStack/>
     <Processpage/>

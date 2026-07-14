@@ -124,10 +124,10 @@ function HeaderSec() {
         <header className="bg-[#1D1D1D] w-full fixed top-0 left-0 z-999">
           <nav className="py-3 justify-between w-[90%] mx-auto my-0 flex items-center">
             <a href="" className="">
-              <h1 className="font-syne text-[1.5rem] font-extrabold text-[#FFFFFF]">Jonah</h1>
+              <h1 className="font-syne text-[20px] lg:text-[1.5rem] font-extrabold text-[#FFFFFF]">Jonah</h1>
             </a>
 
-            <ul className="flex text-white gap-10 font-mono">
+            <ul className="hidden lg:flex text-white gap-10 font-mono">
               <li className="">
                 <a href="" className="flex gap-1">
                   <span className="text-[.8rem]">01</span>
@@ -154,7 +154,7 @@ function HeaderSec() {
               </li>
             </ul>
 
-            <a href="" className="group bg-[black] text-[#FFFFFF] py-3 px-6 font-inter text-[1.1rem] font-medium tracking-[-0.16px] flex items-center gap-2">
+            <a href="" className="group bg-[black] text-[#FFFFFF] py-3 px-4.5 lg:px-6 font-inter text-[15px] lg:text-[1.1rem] font-medium tracking-[-0.16px] flex items-center gap-2">
               <FlowText text="Available for work" />
               <HoverIcon
                 src="https://img.icons8.com/puffy/32/FFFFFF/long-arrow-right.png"
