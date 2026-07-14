@@ -3,28 +3,31 @@ import React, { useRef, useState, useEffect } from "react";
 const stackData = {
   languages: {
     title: "LANGUAGES",
-    items: ["JavaScript",  "HTML5", "CSS3"],
+    items: ["JavaScript",  "HTML5", "CSS3", "SQL"],
   },
   frameworks: {
     title: "FRAMEWORKS",
-    items: ["JQuery", "Bootstrap ", "React", "Node.js", "Express", "Tailwind CSS"],
+    // items: ["JQuery", "Bootstrap ", "React", "Node.js", "Express", "Tailwind CSS"],
+    items: ["JQuery", "React", "Node.js", "Express"],
   },
+  css_frameworks: {
+    title: "Styling",
+    // items: ["JQuery", "Bootstrap ", "React", "Node.js", "Express", "Tailwind CSS"],
+    items: ["Tailwind CSS", "Bootstrap", "CSS Modules"],
+  },
+
   tools: {
     title: "Database",
     items: ["MySQL", "PostgreSQL"],
   },
-  Version_Control: {
-    title: "Version Control",
-    items: ["Git", "Github"],
-  },
   Design_Tools: {
-    title: "Design Tools",
-    items: ["Figma", "Canva"],
+    title: " Tooling",
+    items: ["Figma", "Canva", "Vercel", "npm / pnpm", "Postman", "Git", "GitHub"],
   },
-  Hosting: {
-    title: "Hosting",
-    items: ["Vercel", "Nestify"],
-  },
+  practiceItems: {
+    title: "Practice",
+    items: ["Problem Solving", "Team Collaboration", "Responsive & Cross-Browser", "Performance", "Accessibility"],
+  }
 
 };
 
@@ -97,27 +100,27 @@ export default function TechStack() {
     <section id="stack" className="flex justify-center">
       <div ref={sectionRef} className="w-[90%] gap-12 flex flex-col py-20 md:py-32">
         <h2
-            className="uppercase text-[80px] font-extrabold font-syne text-white"
+            className="uppercase text-[40px] lg:text-[60px] font-bold font-syne text-white"
         >
-            SYNTAX & STACK
+            STACK
         </h2>
 
-        <div className="w-full flex flex-col md:flex-row justify-between gap-8">
-          <div className="flex flex-col gap-4 w-[50%]">
+        <div className="w-full flex flex-col md:flex-row justify-between gap-4">
+
+          <div className="flex flex-col gap-4 w-full lg:w-[40%]">
             <StackColumn title={stackData.languages.title} items={stackData.languages.items} delay={0} />
-            <div className="flex gap-4">
-                <StackColumn title={stackData.Version_Control.title} items={stackData.Version_Control.items} delay={300} />
-                <StackColumn title={stackData.tools.title} items={stackData.tools.items} delay={300} />
+            <div className="flex gap-4 flex-col lg:flex-row">
+              <StackColumn title={stackData.css_frameworks.title} items={stackData.css_frameworks.items} delay={150} />
+              <StackColumn title={stackData.frameworks.title} items={stackData.frameworks.items} delay={150} />
             </div>
           </div>
-          <div className="flex gap-4 w-[50%]">
-            <StackColumn title={stackData.frameworks.title} items={stackData.frameworks.items} delay={150} />
-            <div className="flex gap-4 flex-col">
-                <StackColumn title={stackData.Design_Tools.title} items={stackData.Design_Tools.items} delay={300} />
-                <StackColumn title={stackData.Hosting.title} items={stackData.Hosting.items} delay={300} />
-            </div>
+
+          <div className="flex flex-col gap-4 w-full lg:w-[27%]">
+            <StackColumn title={stackData.tools.title} items={stackData.tools.items} delay={300} />
+            <StackColumn title={stackData.practiceItems.title} items={stackData.practiceItems.items} delay={300} />
           </div>
-          {/* <StackColumn title={stackData.tools.title} items={stackData.tools.items} delay={300} /> */}
+
+          <StackColumn title={stackData.Design_Tools.title} items={stackData.Design_Tools.items} delay={300} />           
         </div>
       </div>
     </section>
