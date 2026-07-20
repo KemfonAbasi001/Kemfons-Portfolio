@@ -540,7 +540,7 @@ export function Beforefooter() {
 
 export function Footerpage() {
   return (
-    <section className="flex justify-center bg-[#121212] py-20">
+    <section className="flex justify-center bg-[#121212] py-20" id="contact">
       <div className="w-[90%] max-w-300 text-white flex flex-col gap-10 md:gap-25">
         <div className="flex justify-between items-start flex-col lg:flex-row gap-15">
           <div className="flex flex-col gap-17 w-full lg:w-fit">
@@ -597,7 +597,7 @@ export function Footerpage() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between gap-8 py-4 border-b border-[#91919180] hover:border-metal-dark transition-colors duration-300"
+                  className="group flex items-center justify-between gap-8 py-4 border-b last:border-b-0 border-[#91919180] hover:border-metal-dark transition-colors duration-300"
                 >
                   <span className="font-mono text-[1.08rem] lg:text-[1rem] tracking-[0.15em] text-metal-medium group-hover:text-white transition-colors duration-300">
                     {social.label}

@@ -135,7 +135,7 @@ const steps = [
 
 function Processpage() {
   return (
-    <section className="flex justify-center pt-13 lg:pt-0">
+    <section className="flex justify-center pt-13 lg:pt-0" id="process">
       <div className="w-[90%] max-w-300 text-white flex flex-col gap-12 lg:gap-10 py-10">
         {steps.map((s) => (
           <div key={s.number} className="w-full py-0 lg:py-10 ">

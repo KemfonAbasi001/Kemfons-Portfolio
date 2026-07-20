@@ -383,12 +383,12 @@ const projects = [
   {
     id: "01",
     title: "DashUI",
-    category: "Commerce Platform",
-    role: "Front-End · Design System",
+    category: "Template Marketplace",
+    role: "Full stack · Web Templates",
     year: "2023",
     description:
-      "A component-driven storefront for independent designers, built around a reusable design system so new product lines ship in days, not weeks.",
-    stack: ["React", "Canva", "Node.js", "Tailwind", "Postgres"],
+      "Explore a collection of beautifully crafted templates, effortlessly customizable, so you can launch in minutes—not start from scratch.",
+    stack: ["React", "Canva", "Tailwind", "Postgres"],
   },
   {
     id: "02",
@@ -438,7 +438,7 @@ function ProjectRow({ project, index }) {
         {project.id}
       </span>
 
-      <div className="relative flex flex-col lg:flex-row lg:items-start justify-between gap-4 lg:gap-10">
+      <div className="relative flex flex-col md:flex-row md:items-start justify-between gap-4 lg:gap-10">
         <div className="flex items-baseline gap-4 lg:gap-8">
           <span className="font-mono text-[13px] tracking-[0.2em] transition-colors duration-300 group-hover:text-[#acacac]">
             {project.id}
@@ -448,7 +448,7 @@ function ProjectRow({ project, index }) {
           </h3>
         </div>
 
-        <div className="lg:text-right lg:pl-10 shrink-0">
+        <div className="md:text-right lg:pl-10 shrink-0">
           <p className="font-inter text-[#FFFFFFB3] text-[1rem]">{project.category}</p>
           <p className="font-mono text-[0.8rem] tracking-wide text-[#acacac]">{project.role}</p>
           <p className="font-mono text-[0.8rem] tracking-wide text-[#acacac] mt-1">{project.year}</p>
@@ -497,7 +497,7 @@ function WorkList() {
 
 function Workpage() {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center" id="work">
       <div className="w-[90%] max-w-300 text-white py-30 lg:py-2">
         <div className="flex flex-col gap-2.5">
           <h1 className="uppercase text-[30px] lg:text-[60px] font-bold font-syne text-white">Featured Work</h1>

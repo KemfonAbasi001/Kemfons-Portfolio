@@ -65,7 +65,7 @@ function Landingpage() {
                     <div className="">
 
                     <p className="uppercase font-mono mb-1.5 text-[14px]">[STATUS: Full Stack Developer]</p>
-                    <h1 className="text-[30px] lg:text-[80px] font-syne font-extrabold">
+                    <h1 id="header-text" className="text-[30px] md:text-[50px] lg:text-[65px] xl:text-[80px] font-syne font-extrabold">
                         <span className="">Build with</span>
                         <br/>
                         <span className="lg:ml-30 text-[#FFFFFFB3]">KemfonAbasi</span>

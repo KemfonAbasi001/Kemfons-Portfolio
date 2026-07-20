@@ -22,3 +22,10 @@ a {
   background-color: #454545; /* or any color you want */
   color: white;
 }
+
+
+@media (min-width: 555px) and (max-width: 767px){
+  #header-text{
+    font-size: 3rem;
+  }
+}
