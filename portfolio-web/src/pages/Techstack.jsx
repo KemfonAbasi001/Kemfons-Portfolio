@@ -73,7 +73,7 @@ function StackColumn({ title, items, delay }) {
         <div className="lg:w-2.5 lg:h-2.5 w-3 h-3 rounded-full bg-[#91919180]" />
         <div className="lg:w-2.5 lg:h-2.5 w-3 h-3 rounded-full bg-[#91919180]" />
         <div className="lg:w-2.5 lg:h-2.5 w-3 h-3 rounded-full bg-[#91919180]" />
-        <span className="ml-1 font-mono text-[14px] lg:text-[11px] text-industrial/50 tracking-widest">{title}</span>
+        <span className="ml-1 font-mono text-[14px] md:text-[1.2rem] lg:text-[11px] text-industrial/50 tracking-widest">{title}</span>
       </div>
 
       <div className="p-5 space-y-0">
@@ -83,8 +83,8 @@ function StackColumn({ title, items, delay }) {
             className="flex items-center gap-4 py-4 lg:py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-[#171717] transition-colors duration-300 px-1"
             // className="flex items-center gap-4 py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-slate_struct/10 transition-colors duration-300 px-1"
           >
-            <span className="font-mono text-[14px] lg:text-[11px] text-industrial/30 w-6">{String(i + 1).padStart(2, "0")}</span>
-            <span className="font-mono text-[15px] lg:text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
+            <span className="font-mono text-[14px] md:text-[1.2rem] lg:text-[11px] text-industrial/30 w-6">{String(i + 1).padStart(2, "0")}</span>
+            <span className="font-mono text-[15px] md:text-[1.2rem] lg:text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
           </div>
         ))}
       </div>
@@ -98,14 +98,14 @@ export default function TechStack() {
 
   return (
     <section id="stack" className="flex justify-center">
-      <div ref={sectionRef} className="w-[90%] max-w-300 gap-12 flex flex-col py-1 md:py-12">
+      <div ref={sectionRef} className="w-[90%] max-w-300 gap-12 flex flex-col py-1 md:pb-12 md:pt-25">
         <h2
             className="uppercase text-[40px] lg:text-[60px] font-bold font-syne text-white"
         >
             STACK
         </h2>
 
-        <div className="w-full flex flex-col md:flex-row justify-between gap-4">
+        <div className="w-full flex flex-col lg:flex-row justify-between gap-4">
 
           <div className="flex flex-col gap-4 w-full lg:w-[40%]">
             <StackColumn title={stackData.languages.title} items={stackData.languages.items} delay={0} />

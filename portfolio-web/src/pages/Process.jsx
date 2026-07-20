@@ -143,10 +143,10 @@ function Processpage() {
               <p className="text-[1.2rem]">{s.number}</p>
             </div> */}
             <div>
-              <h1 className="uppercase text-[23px] lg:text-[64px] lg:ml-10 font-syne font-extrabold overflow-hidden">
+              <h1 className="uppercase text-[23px] xl:text-[64px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-syne font-extrabold overflow-hidden">
                 <AnimatedWords text={s.title} step={45} />
               </h1>
-              <p className="text-[1.3rem] lg:ml-60 font-medium font-inter text-[#B3B3B3] lg:w-190">
+              <p className="text-[1.3rem] xl:ml-60 font-medium font-inter lg:ml-40 text-[#B3B3B3] xl:w-190">
                 <AnimatedWords text={s.body} step={22} />
               </p>
             </div>
