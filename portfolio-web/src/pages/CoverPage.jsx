@@ -49,7 +49,7 @@ function Coverpage() {
 
   return (
     <section className="bg-[#1D1D1D] w-full h-screen flex justify-center items-center">
-      <svg viewBox="0 0 600 140" className="w-[90vw] max-w-160 h-auto text-[75px] lg:text-[55px] flex justify-center items-center" aria-label="Jonah">
+      <svg viewBox="0 0 600 140" className="w-[90vw] max-w-160 h-auto flex justify-center items-center" aria-label="Jonah">
         <defs>
           <clipPath id="jonahTextClip">
             <text
@@ -57,7 +57,7 @@ function Coverpage() {
               y="90"
               textAnchor="middle"
               className="font-syne"
-              // fontSize="55"
+              fontSize="55"
               fontWeight="800"
             >
               Jonah
@@ -73,7 +73,7 @@ function Coverpage() {
           y="90"
           textAnchor="middle"
           className="font-syne"
-          // fontSize="55"
+          fontSize="55"
           fontWeight="800"
           fill="none"
           stroke="#FFFFFF"
