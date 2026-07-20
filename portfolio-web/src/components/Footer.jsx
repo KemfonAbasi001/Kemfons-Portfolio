@@ -341,9 +341,9 @@
 import { useEffect, useRef } from "react";
 
 const socials = [
-  { label: "GITHUB", url: "https://github.com" },
-  { label: "LINKEDIN", url: "https://linkedin.com" },
-  { label: "TWITTER/X", url: "https://x.com" },
+  { label: "GITHUB", url: "https://github.com/KemfonAbasi001"},
+  { label: "LINKEDIN", url: "linkedin.com/in/kemfonabasi-jonah-web-developer-👩🏾‍💻-967060313" },
+  { label: "TWITTER/X", url: "https://x.com/KemfonAbasi_" },
 ];
 
 const headline1Words = ["YOUR", "NEXT", "BIG"].map((t) => ({ t }));
