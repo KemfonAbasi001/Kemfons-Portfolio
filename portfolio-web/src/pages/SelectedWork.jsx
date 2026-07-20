@@ -420,33 +420,43 @@ function useRevealOnce(threshold = 0.2) {
 const projects = [
   {
     id: "01",
-    title: "Solace",
-    category: "Wellness Platform",
-    role: "Product Design · Full-Stack",
-    year: "2024",
-    description:
-      "A calm, distraction-free wellness app built for daily use — session tracking, guided routines, and a dashboard designed to feel restful rather than gamified.",
-    stack: ["Next.js", "PostgreSQL", "Tailwind"],
-  },
-  {
-    id: "02",
-    title: "Ledger",
-    category: "Fintech Dashboard",
-    role: "Full-Stack Engineering",
-    year: "2023",
-    description:
-      "Real-time financial dashboard handling high-frequency data updates with a focus on clarity under pressure — dense information, zero clutter.",
-    stack: ["React", "Node.js", "WebSockets"],
-  },
-  {
-    id: "03",
-    title: "Atelier",
+    title: "DashUI",
     category: "Commerce Platform",
     role: "Front-End · Design System",
     year: "2023",
     description:
       "A component-driven storefront for independent designers, built around a reusable design system so new product lines ship in days, not weeks.",
-    stack: ["React", "Figma", "Storybook"],
+    stack: ["React", "Canva", "Node.js", "Tailwind", "Postgres"],
+  },
+  {
+    id: "02",
+    title: "Avenoir",
+    category: "Wellness Platform",
+    role: "Product Design · Full-Stack",
+    year: "2024",
+    description:
+      "A calm, distraction-free wellness app built for daily use — session tracking, guided routines, and a dashboard designed to feel restful rather than gamified.",
+    stack: ["React", "Tailwind"],
+  },
+  {
+    id: "03",
+    title: "Velmora",
+    category: "Fintech Dashboard",
+    role: "Full-Stack Engineering",
+    year: "2023",
+    description:
+      "Real-time financial dashboard handling high-frequency data updates with a focus on clarity under pressure — dense information, zero clutter.",
+    stack: ["React", "Tailwind"],
+  },
+  {
+    id: "04",
+    title: "Hospital",
+    category: "Commerce Platform",
+    role: "Front-End · Design System",
+    year: "2023",
+    description:
+      "A component-driven storefront for independent designers, built around a reusable design system so new product lines ship in days, not weeks.",
+    stack: ["React", "Tailwind"],
   },
 ];
 
@@ -462,24 +472,24 @@ function ProjectRow({ project, index }) {
       style={{ transitionDelay: visible ? `${index * 100}ms` : "0ms" }}
     >
       {/* Oversized ghost numeral -- pure typography, no imagery */}
-      <span className="pointer-events-none select-none absolute -top-4 lg:-top-8 right-0 font-syne font-extrabold text-[90px] lg:text-[140px] leading-none text-[#FFFFFF08] transition-colors duration-500 group-hover:text-[#2F5FDE14]">
+      <span className="pointer-events-none select-none absolute -top-4 lg:-top-8 right-0 font-syne font-extrabold text-[90px] lg:text-[140px] leading-none text-[#FFFFFF08] transition-colors duration-500 group-hover:text-[#acacac27]">
         {project.id}
       </span>
 
       <div className="relative flex flex-col lg:flex-row lg:items-start justify-between gap-4 lg:gap-10">
         <div className="flex items-baseline gap-4 lg:gap-8">
-          <span className="font-mono text-[13px] tracking-[0.2em] text-[#5B7FD1] transition-colors duration-300 group-hover:text-[#8FB1F5]">
+          <span className="font-mono text-[13px] tracking-[0.2em] transition-colors duration-300 group-hover:text-[#acacac]">
             {project.id}
           </span>
-          <h3 className="text-[36px] lg:text-[56px] font-syne font-extrabold uppercase leading-none transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-2">
+          <h3 className="text-[36px] lg:text-[56px] font-syne font-semibold uppercase leading-none transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-2">
             {project.title}
           </h3>
         </div>
 
         <div className="lg:text-right lg:pl-10 shrink-0">
           <p className="font-inter text-[#FFFFFFB3] text-[1rem]">{project.category}</p>
-          <p className="font-mono text-[0.8rem] tracking-wide text-[#66707D]">{project.role}</p>
-          <p className="font-mono text-[0.8rem] tracking-wide text-[#66707D] mt-1">{project.year}</p>
+          <p className="font-mono text-[0.8rem] tracking-wide text-[#acacac]">{project.role}</p>
+          <p className="font-mono text-[0.8rem] tracking-wide text-[#acacac] mt-1">{project.year}</p>
         </div>
       </div>
 
@@ -487,11 +497,11 @@ function ProjectRow({ project, index }) {
       <div className="relative grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
         <div className="overflow-hidden">
           <div className="pt-5 lg:pl-[76px] flex flex-col lg:flex-row lg:items-end justify-between gap-4">
-            <p className="font-inter text-[#B8BFCC] text-[0.95rem] leading-relaxed max-w-140">
+            <p className="font-inter text-[#acacac] text-[0.95rem] leading-relaxed max-w-140">
               {project.description}
             </p>
             <div className="flex items-center gap-6 shrink-0">
-              <div className="flex gap-2 font-mono text-[11px] tracking-[0.15em] text-[#66707D] uppercase">
+              <div className="flex gap-2 font-mono text-[11px] tracking-[0.15em] text-[#acacac] uppercase">
                 {project.stack.map((tech) => (
                   <span key={tech} className="border border-[#FFFFFF1F] rounded-full px-3 py-1">
                     {tech}
@@ -531,7 +541,7 @@ function Workpage() {
     <section className="flex justify-center">
       <div className="w-[90%] text-white py-40">
         <div className="flex flex-col gap-2.5">
-          <h1 className="uppercase text-[60px] font-extrabold font-syne">Featured Work</h1>
+          <h1 className="uppercase text-[40px] lg:text-[60px] font-bold font-syne text-white">Featured Work</h1>
           <a
             href="#"
             className="group text-[1.4rem] self-end font-medium flex items-center gap-2 w-fit bg-[linear-gradient(white,white)] bg-no-repeat bg-size-[0%_2px] bg-position-[0_100%] transition-[background-size] duration-300 hover:bg-size-[100%_2px]"

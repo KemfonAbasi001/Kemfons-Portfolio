@@ -5,7 +5,7 @@
 import { Beforefooter, Footerpage } from "./components/Footer"
 import Landingpage from "./pages/Landingpage"
 import Processpage from "./pages/Process"
-// import Workpage from "./pages/SelectedWork"
+import Workpage from "./pages/SelectedWork"
 import TechStack from "./pages/Techstack"
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <>
     {/* <Coverpage/> */}
     <Landingpage/>
-    {/* <Workpage/> */}
+    <Workpage/>
     <TechStack/>
     <Processpage/>
     <Beforefooter/>

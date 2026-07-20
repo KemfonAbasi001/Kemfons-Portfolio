@@ -63,7 +63,7 @@ function Landingpage() {
                     <img src={picture} alt="" className="relative self-end lg:absolute w-90 lg:w-60 lg:top-24 z-200 right-0" />
                     <div className="">
 
-                    <p className="uppercase font-mono mb-1.5">[STATUS: Full Stack Developer]</p>
+                    <p className="uppercase font-mono mb-1.5 text-[14px]">[STATUS: Full Stack Developer]</p>
                     <h1 className="text-[35px] lg:text-[80px] font-syne font-extrabold">
                         <span className="">Build with</span>
                         <br/>

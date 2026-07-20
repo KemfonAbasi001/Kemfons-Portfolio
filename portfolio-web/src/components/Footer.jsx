@@ -552,7 +552,7 @@ export function Beforefooter() {
               <Word key={i} word={word} register={p1WordRefs[i]} />
             ))}
           </p>
-          <p ref={p2Ref} className="text-[1.3rem] text-[#A7A7A7] font-medium w-100 lg:ml-90">
+          <p ref={p2Ref} className="text-[1.3rem] text-[#A7A7A7] font-medium lg:w-100 lg:ml-90">
             {paragraph2Words.map((word, i) => (
               <Word key={i} word={word} register={p2WordRefs[i]} />
             ))}

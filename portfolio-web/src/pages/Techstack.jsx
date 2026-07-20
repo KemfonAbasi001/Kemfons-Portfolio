@@ -69,22 +69,22 @@ function StackColumn({ title, items, delay }) {
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="flex items-center gap-2 px-5 py-3 border-b border-[#91919180]">
-        <div className="w-2.5 h-2.5 rounded-full bg-[#91919180]" />
-        <div className="w-2.5 h-2.5 rounded-full bg-[#91919180]" />
-        <div className="w-2.5 h-2.5 rounded-full bg-[#91919180]" />
-        <span className="ml-1 font-mono text-[11px] text-industrial/50 tracking-widest">{title}</span>
+      <div className="flex items-center gap-2 px-5 lg:py-3 py-4 border-b border-[#91919180]">
+        <div className="lg:w-2.5 lg:h-2.5 w-3 h-3 rounded-full bg-[#91919180]" />
+        <div className="lg:w-2.5 lg:h-2.5 w-3 h-3 rounded-full bg-[#91919180]" />
+        <div className="lg:w-2.5 lg:h-2.5 w-3 h-3 rounded-full bg-[#91919180]" />
+        <span className="ml-1 font-mono text-[14px] lg:text-[11px] text-industrial/50 tracking-widest">{title}</span>
       </div>
 
       <div className="p-5 space-y-0">
         {items.map((item, i) => (
           <div
             key={item}
-            className="flex items-center gap-4 py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-[#171717] transition-colors duration-300 px-1"
+            className="flex items-center gap-4 py-4 lg:py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-[#171717] transition-colors duration-300 px-1"
             // className="flex items-center gap-4 py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-slate_struct/10 transition-colors duration-300 px-1"
           >
-            <span className="font-mono text-[11px] text-industrial/30 w-6">{String(i + 1).padStart(2, "0")}</span>
-            <span className="font-mono text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
+            <span className="font-mono text-[14px] lg:text-[11px] text-industrial/30 w-6">{String(i + 1).padStart(2, "0")}</span>
+            <span className="font-mono text-[1rem] lg:text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
           </div>
         ))}
       </div>
