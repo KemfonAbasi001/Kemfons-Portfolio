@@ -27,6 +27,7 @@
 
 import HeaderSec from "../components/Header"
 import picture from "../assets/my-photo.webp"
+import resume from '../assets/Kemfon-Resume.pdf'
 
 function FlowText({ text, step = 18, className = "" }) {
   return (
@@ -59,7 +60,7 @@ function Landingpage() {
             <HeaderSec/>
             <section className="flex justify-center relative">
               {/* <img src={picture} alt="" className="relative lg:absolute w-60 lg:top-24 z-200 right-0" /> */}
-                <div className="w-[90%] text-white flex-col-reverse flex pt-40 pb-10 lg:py-40 z-300 gap-20">
+                <div className="w-[90%] max-w-300 text-white flex-col-reverse flex pt-40 pb-10 lg:py-40 z-300 gap-20">
                     <img src={picture} alt="" className="relative self-end lg:absolute w-90 lg:w-60 lg:top-24 z-200 right-0" />
                     <div className="">
 
@@ -71,7 +72,7 @@ function Landingpage() {
                     </h1>
                     <div className="flex flex-col lg:flex-row gap-10 lg:justify-between mt-4">
                         <p className="text-[21px] text-[#FFFFFFB3] leading-[33px] lg:leading-7.5 font-medium tracking-[-0.16px] lg:w-130 font-inter">Building precise, performant digital systems where engineering rigor meets design sensibility. Every interface tells a story of intentional craft.</p>
-                        <a href="" className="group font-mono py-2.75 border border-solid border-[rgba(255, 255, 255, 0.2)] text-[rgb(207, 213, 220)] h-fit px-9 self-end">
+                        <a href={resume} className="group font-mono py-2.75 border border-solid border-[rgba(255, 255, 255, 0.2)] text-[rgb(207, 213, 220)] h-fit px-9 self-end">
                             <FlowText text="[OPEN_RESUME]" />
                         </a>
                     </div>

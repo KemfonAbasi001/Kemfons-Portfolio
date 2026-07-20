@@ -84,7 +84,7 @@ function StackColumn({ title, items, delay }) {
             // className="flex items-center gap-4 py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-slate_struct/10 transition-colors duration-300 px-1"
           >
             <span className="font-mono text-[14px] lg:text-[11px] text-industrial/30 w-6">{String(i + 1).padStart(2, "0")}</span>
-            <span className="font-mono text-[1rem] lg:text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
+            <span className="font-mono text-[15px] lg:text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
           </div>
         ))}
       </div>
@@ -98,7 +98,7 @@ export default function TechStack() {
 
   return (
     <section id="stack" className="flex justify-center">
-      <div ref={sectionRef} className="w-[90%] gap-12 flex flex-col py-20 md:py-32">
+      <div ref={sectionRef} className="w-[90%] max-w-300 gap-12 flex flex-col py-1 md:py-12">
         <h2
             className="uppercase text-[40px] lg:text-[60px] font-bold font-syne text-white"
         >

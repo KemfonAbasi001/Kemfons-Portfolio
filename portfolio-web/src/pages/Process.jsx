@@ -135,15 +135,15 @@ const steps = [
 
 function Processpage() {
   return (
-    <section className="flex justify-center">
-      <div className="w-[90%] text-white flex flex-col gap-5 lg:gap-20 py-10">
+    <section className="flex justify-center pt-13 lg:pt-0">
+      <div className="w-[90%] max-w-300 text-white flex flex-col gap-12 lg:gap-10 py-10">
         {steps.map((s) => (
-          <div key={s.number} className="w-full py-10 flex gap-55">
+          <div key={s.number} className="w-full py-0 lg:py-10 ">
             {/* <div className="font-mono flex items-end">
               <p className="text-[1.2rem]">{s.number}</p>
             </div> */}
-            <div className="">
-              <h1 className="uppercase text-[34px] lg:text-[64px] lg:ml-10 font-syne font-bold overflow-hidden">
+            <div>
+              <h1 className="uppercase text-[34px] lg:text-[64px] lg:ml-10 font-syne font-extrabold overflow-hidden">
                 <AnimatedWords text={s.title} step={45} />
               </h1>
               <p className="text-[1.3rem] lg:ml-60 font-medium font-inter text-[#B3B3B3] lg:w-190">
