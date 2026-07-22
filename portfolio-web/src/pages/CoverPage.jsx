@@ -1,15 +1,3 @@
-// function Coverpage() {
-//     return(
-//         <section className="bg-[#1D1D1D] w-full h-screen flex justify-center items-center">
-//           <h1 className="font-syne text-[3rem] font-extrabold text-[#FFFFFF]">Jonah<sup><span className="font-normal text-[20px]">©</span></sup></h1>
-//         </section>
-//     )
-// }
-
-// export default Coverpage
-
-
-
 "use client"
 
 import { useEffect, useRef } from "react"
@@ -20,7 +8,7 @@ function Coverpage() {
   useEffect(() => {
     const TEXT_TOP = 20
     const TEXT_BOTTOM = 98
-    const DURATION_MS = 10000 // 4s to go from empty to full
+    const DURATION_MS = 10000
     let start = null
     let rafId
 
@@ -28,7 +16,7 @@ function Coverpage() {
       if (start === null) start = ts
       const elapsed = ts - start
       const rawProgress = Math.min(elapsed / DURATION_MS, 1)
-      const progress = 1 - Math.pow(1 - rawProgress, 3) // ease-out cubic
+      const progress = 1 - Math.pow(1 - rawProgress, 3)
 
       const fillY = TEXT_BOTTOM - progress * (TEXT_BOTTOM - TEXT_TOP)
       const fillHeight = TEXT_BOTTOM - fillY

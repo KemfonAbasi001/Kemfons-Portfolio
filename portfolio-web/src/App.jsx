@@ -1,6 +1,4 @@
 // import Coverpage from "./pages/CoverPage"
-// // import HeaderSec from "./components/Header"
-// // import AvailableForWorkButton from "./pages/SelectedWork"
 
 import { Beforefooter, Footerpage } from "./components/Footer"
 import Landingpage from "./pages/Landingpage"
@@ -18,9 +16,6 @@ function App() {
     <Processpage/>
     <Beforefooter/>
     <Footerpage/>
-    {/* <HeaderSec/> */}
-    {/* <AvailableForWorkButton/> */}
-    
     </>
   )
 }

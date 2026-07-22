@@ -6,6 +6,10 @@ body {
   font-family: "Geist", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 @theme {
   --font-inter: "Inter", sans-serif;
@@ -19,7 +23,7 @@ a {
 
 
 ::selection {
-  background-color: #454545; /* or any color you want */
+  background-color: #454545;
   color: white;
 }
 
@@ -29,3 +33,4 @@ a {
     font-size: 3rem;
   }
 }
+

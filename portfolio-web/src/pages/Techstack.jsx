@@ -7,12 +7,10 @@ const stackData = {
   },
   frameworks: {
     title: "FRAMEWORKS",
-    // items: ["JQuery", "Bootstrap ", "React", "Node.js", "Express", "Tailwind CSS"],
     items: ["JQuery", "React", "Node.js", "Express"],
   },
   css_frameworks: {
     title: "Styling",
-    // items: ["JQuery", "Bootstrap ", "React", "Node.js", "Express", "Tailwind CSS"],
     items: ["Tailwind CSS", "Bootstrap", "CSS Modules"],
   },
 
@@ -65,7 +63,7 @@ function StackColumn({ title, items, delay }) {
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`w-full flex-1 text-[#acacac] border border-[#91919180] bg-charcoal/30 transition-all duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`w-full flex-1 text-[#acacac] border border-[#91919180] bg-charcoal/30 transition-all duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
@@ -81,7 +79,6 @@ function StackColumn({ title, items, delay }) {
           <div
             key={item}
             className="flex items-center gap-4 py-4 lg:py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-[#171717] transition-colors duration-300 px-1"
-            // className="flex items-center gap-4 py-2.5 border-b border-[#91919180] last:border-0 group hover:bg-slate_struct/10 transition-colors duration-300 px-1"
           >
             <span className="font-mono text-[14px] md:text-[1.2rem] lg:text-[11px] text-industrial/30 w-6">{String(i + 1).padStart(2, "0")}</span>
             <span className="font-mono text-[15px] md:text-[1.2rem] lg:text-[14px] text-industrial group-hover:text-white transition-colors duration-300">{item}</span>
