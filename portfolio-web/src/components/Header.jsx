@@ -151,7 +151,7 @@ function HeaderSec() {
               style={{ transitionDelay: open ? `${120 + i * 70}ms` : "0ms" }}
             >
               <span className="font-mono text-[.8rem] text-white/40">{link.n}</span>
-              <span className="font-mono text-[2.2rem] font-extrabold text-white leading-none">
+              <span className="font-syne text-[2.2rem] font-extrabold text-white leading-none">
                 {link.label}
               </span>
             </a>
