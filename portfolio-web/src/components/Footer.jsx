@@ -283,7 +283,7 @@ export function Footerpage() {
         <div className="w-full border-t border-b-0 border-x-0 pt-8 pb-3 border-solid border-[#91919180] flex lg:justify-between lg:flex-row flex-col">
             <p className="text-[#FFFFFFB3] text-[1.1rem] text-normal font-mono">DESIGNED & DEVELOPED WITH PRECISION</p>
             <span className="flex gap-3 font-mono">
-                <p className="text-[#FFFFFFB3] text-[1.1rem] text-normal">NIGERIA </p>
+                <p className="text-[#FFFFFFB3] text-[1.1rem] text-normal">NIGERIA 🇳🇬</p>
                 <p className="text-[#FFFFFFB3] text-[1.1rem] text-normal"> ©{new Date().getFullYear()}</p>
             </span>
         </div>
