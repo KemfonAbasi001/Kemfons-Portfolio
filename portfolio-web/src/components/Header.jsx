@@ -43,7 +43,7 @@ function HeaderSec() {
   return (
     <header className="bg-[#1D1D1D] w-full fixed top-0 left-0 z-999">
       <nav className="py-3 justify-between w-[90%] max-w-300 mx-auto my-0 flex items-center">
-        <a href="" className="">
+        <a href="#landingpage" className="">
           <h1 className="font-syne text-[1.3rem] lg:text-[1.5rem] font-extrabold text-[#FFFFFF]">Jonah</h1>
         </a>
 

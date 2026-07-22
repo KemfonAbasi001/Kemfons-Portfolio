@@ -31,7 +31,7 @@ function Landingpage() {
     return(
         <>
             <HeaderSec/>
-            <section className="flex justify-center relative">
+            <section className="flex justify-center relative" id="landingpage">
               {/* <img src={picture} alt="" className="relative lg:absolute w-60 lg:top-24 z-200 right-0" /> */}
                 <div className="w-[90%] max-w-300 text-white flex-col-reverse flex pt-40 pb-10 lg:py-40 z-300 gap-20">
                     <img src={picture} alt="" className="relative self-end lg:absolute w-90 lg:w-60 lg:top-24 z-300 right-0" />
