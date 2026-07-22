@@ -101,7 +101,7 @@ function ProjectRow({ project, index, isOpen, onToggle }) {
     <div
       ref={ref}
       onClick={onToggle}
-      className={`group relative border-t border-[#FFFFFF1F] last:border-b py-8 lg:py-10 overflow-hidden transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] cursor-pointer ${
+      className={`group relative border-t border-[#FFFFFF1F] last:border-b py-8 lg:py-10 overflow-hidden transition-all duration-900 ease-[cubic-bezier(0.22,1,0.36,1)] cursor-pointer ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{ transitionDelay: visible ? `${index * 100}ms` : "0ms" }}

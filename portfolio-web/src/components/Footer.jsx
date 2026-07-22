@@ -186,6 +186,7 @@ export function Beforefooter() {
           </p>
         </div>
         <a
+          target="_blank"
           href="https://cal.com/kemfonabasi"
           className="group xl:ml-165 lg:ml-110 py-4 px-7 lg:px-10 bg-black w-fit text-[1.5rem] lg:text-[1.4rem] flex items-center gap-3 text-white"
         >

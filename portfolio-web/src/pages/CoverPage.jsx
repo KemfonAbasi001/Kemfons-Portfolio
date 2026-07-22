@@ -1,14 +1,16 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
-function Coverpage() {
+function Coverpage({ onFinish }) {
   const fillRectRef = useRef(null)
+  const [fadeOut, setFadeOut] = useState(false)
 
   useEffect(() => {
     const TEXT_TOP = 20
     const TEXT_BOTTOM = 98
-    const DURATION_MS = 10000
+    const DURATION_MS = 2000
+    const FADE_MS = 700
     let start = null
     let rafId
 
@@ -28,15 +30,24 @@ function Coverpage() {
 
       if (rawProgress < 1) {
         rafId = requestAnimationFrame(animate)
+      } else {
+        setFadeOut(true)
+        setTimeout(() => {
+          if (onFinish) onFinish()
+        }, FADE_MS)
       }
     }
 
     rafId = requestAnimationFrame(animate)
     return () => cancelAnimationFrame(rafId)
-  }, [])
+  }, [onFinish])
 
   return (
-    <section className="bg-[#1D1D1D] w-full h-screen flex justify-center items-center">
+    <section
+      className={`fixed inset-0 z-50 bg-[#1D1D1D] w-full h-screen flex justify-center items-center transition-opacity duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+        fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
+    >
       <svg viewBox="0 0 600 140" className="w-[90vw] max-w-160 h-auto flex justify-center items-center" aria-label="Jonah">
         <defs>
           <clipPath id="jonahTextClip">
