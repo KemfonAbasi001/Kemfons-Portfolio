@@ -94,7 +94,7 @@ export default function TechStack() {
   const isInView = useInView(sectionRef, { once: true, margin: "-50px" });
 
   return (
-    <section id="stack" className="flex justify-center">
+    <section id="stack" className="noise-bg overflow-hidden flex justify-center">
       <div ref={sectionRef} className="w-[90%] max-w-300 gap-12 flex flex-col py-1 md:pb-12 md:pt-25">
         <h2
             className="uppercase text-[40px] lg:text-[60px] font-bold font-syne text-white"

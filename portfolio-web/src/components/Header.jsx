@@ -41,7 +41,9 @@ function HeaderSec() {
   ];
 
   return (
-    <header className="bg-[#1D1D1D] w-full fixed top-0 left-0 z-999">
+    // <header className="bg-[#1D1D1D] w-full fixed top-0 left-0 z-999">
+    // <header className="noise-bg bg-[#1D1D1D] w-full fixed top-0 left-0 z-999 overflow-hidden">
+    <header className="noise-bg bg-[#1D1D1D] w-full fixed! top-0 left-0 z-999 overflow-hidden">
       <nav className="py-3 justify-between w-[90%] max-w-300 mx-auto my-0 flex items-center">
         <a href="#landingpage" className="">
           <h1 className="font-syne text-[1.3rem] lg:text-[1.5rem] font-extrabold text-[#FFFFFF]">Jonah</h1>
@@ -151,7 +153,7 @@ function HeaderSec() {
               style={{ transitionDelay: open ? `${120 + i * 70}ms` : "0ms" }}
             >
               <span className="font-mono text-[.8rem] text-white/40">{link.n}</span>
-              <span className="font-syne text-[2rem] font-extrabold text-white leading-none">
+              <span className="font-mono text-[2rem] font-extrabold text-white leading-none">
                 {link.label}
               </span>
             </a>

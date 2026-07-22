@@ -31,7 +31,7 @@ function Word({ word, register }) {
     <span className="inline-block overflow-hidden">
       <span
         ref={register}
-        className={`inline-block ${word.hl ? "text-[#A7A7A7]" : ""}`}
+        className={`inline-block ${word.hl ? "text-[#939292]" : ""}`}
         style={{
           transform: "translateY(115%) scale(0.96)",
           opacity: 0,
@@ -159,7 +159,7 @@ export function Beforefooter() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="flex justify-center pt-10 lg:pt-40 pb-30 w-full">
+    <section ref={sectionRef} className="noise-bg overflow-hidden flex justify-center pt-10 lg:pt-40 pb-30 w-full">
       <div className="w-[90%] max-w-300 text-white flex flex-col gap-15 lg:gap-25">
         <span className="">
           <h1 className="uppercase text-[27px] md:text-[40px] lg:text-[60px] lg:leading-18 font-syne font-bold">
@@ -200,7 +200,7 @@ export function Beforefooter() {
 
 export function Footerpage() {
   return (
-    <section className="flex justify-center bg-[#121212] py-20" id="contact">
+    <section className="flex justify-center noise-bg overflow-hidden bg-[#121212] py-20" id="contact">
       <div className="w-[90%] max-w-300 text-white flex flex-col gap-10 md:gap-25">
         <div className="flex justify-between items-start flex-col lg:flex-row gap-15">
           <div className="flex flex-col gap-17 w-full lg:w-fit">

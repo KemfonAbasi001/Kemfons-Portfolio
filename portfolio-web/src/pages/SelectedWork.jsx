@@ -190,7 +190,7 @@ function WorkList() {
 
 function Workpage() {
   return (
-    <section className="flex justify-center" id="work">
+    <section className="noise-bg relative overflow-hidden flex justify-center" id="work">
       <div className="w-[90%] max-w-300 text-white py-30 lg:py-2">
         <div className="flex flex-col gap-3.5 lg:gap-2.5">
           <h1 className="uppercase text-[30px] lg:text-[60px] font-bold font-syne text-white">Featured Work</h1>
