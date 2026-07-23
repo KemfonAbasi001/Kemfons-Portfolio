@@ -136,7 +136,7 @@ function HeaderSec() {
 
       <div
         id="mobile-menu"
-        className={`lg:hidden fixed inset-0 bg-[#1D1D1D] transition-[clip-path] duration-700 ease-[cubic-bezier(0.65,0,0.35,1)] ${
+        className={`lg:hidden fixed! inset-0 noise-bg z-999 overflow-hidden bg-[#1D1D1D] transition-[clip-path] duration-700 ease-[cubic-bezier(0.65,0,0.35,1)] ${
           open ? "[clip-path:circle(150%_at_95%_5%)]" : "[clip-path:circle(0%_at_95%_5%)]"
         } pointer-events-none`}
         style={open ? { pointerEvents: "auto" } : undefined}
@@ -153,7 +153,7 @@ function HeaderSec() {
               style={{ transitionDelay: open ? `${120 + i * 70}ms` : "0ms" }}
             >
               <span className="font-mono text-[.8rem] text-white/40">{link.n}</span>
-              <span className="font-mono text-[2rem] font-extrabold text-white leading-none">
+              <span className="font-syne text-[2rem] font-extrabold text-white leading-none">
                 {link.label}
               </span>
             </a>
