@@ -63,17 +63,28 @@ const projects = [
     stack: ["React", "Canva", "Tailwind", "Postgres"],
     url:  "https://hospital-web-site.vercel.app",
   },
+  // {
+  //   id: "02",
+  //   title: "Avenoir",
+  //   category: "Luxury Stay Marketplace",
+  //   role: "Front end developer",
+  //   year: "2026",
+  //   description:
+  //     "A premium destination for discovering exceptional stays — from luxury villas to modern city escapes. Book effortlessly, host confidently, and experience travel designed with elegance.",
+  //   stack: ["React", "Tailwind"],
+  //   url:  "https://avenoir-web-sitee.vercel.app/",
+  // },
   {
-    id: "02",
-    title: "Avenoir",
-    category: "Luxury Stay Marketplace",
-    role: "Front end developer",
-    year: "2026",
-    description:
-      "A premium destination for discovering exceptional stays — from luxury villas to modern city escapes. Book effortlessly, host confidently, and experience travel designed with elegance.",
-    stack: ["React", "Tailwind"],
-    url:  "https://avenoir-web-sitee.vercel.app/",
-  },
+  id: "02",
+  title: "EVORA",
+  category: "Electric Mobility Platform",
+  role: "Front end developer",
+  year: "2026",
+  description:
+    "A next-generation electric mobility platform powering cleaner urban transportation through smart electric tricycles, seamless charging solutions, and a premium digital experience.",
+  stack: ["React", "Tailwind"],
+  url: "https://evora-web-eta.vercel.app/",
+},
   {
     id: "03",
     title: "Velmora",
