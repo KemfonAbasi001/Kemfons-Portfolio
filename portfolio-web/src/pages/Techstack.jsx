@@ -7,7 +7,7 @@ const stackData = {
   },
   frameworks: {
     title: "FRAMEWORKS",
-    items: ["JQuery", "React", "Node.js", "Express"],
+    items: ["JQuery", "React", "Node.js", "Next.js", "Express"],
   },
   css_frameworks: {
     title: "Styling",
