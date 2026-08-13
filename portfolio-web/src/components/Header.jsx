@@ -113,7 +113,7 @@ function HeaderSec() {
                 y1="102"
                 x2="225"
                 y2="102"
-                className="stroke-neutral-100 bg-red-800 transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] origin-center"
+                className="stroke-neutral-100 transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] origin-center"
                 style={open ? { transform: "translateY(19px) rotate(45deg)" } : undefined}
                 strokeWidth="6"
                 strokeLinecap="square"
@@ -124,7 +124,7 @@ function HeaderSec() {
                 x2="225"
                 y2="140"
                 className="stroke-neutral-100 transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] origin-center"
-                style={open ? { transform: "translateY(-19px) rotate(-45deg)" } : undefined}
+                style={open ? { transform: "translateY(1px) rotate(-45deg)" } : undefined}
                 strokeWidth="6"
                 strokeLinecap="square"
               />
@@ -154,7 +154,7 @@ function HeaderSec() {
               style={{ transitionDelay: open ? `${120 + i * 70}ms` : "0ms" }}
             >
               <span className="font-mono text-[.8rem] text-white/40">{link.n}</span>
-              <span className="font-syne text-[2rem] font-extrabold text-white leading-none">
+              <span className="font-extenda text-[5.5rem] font-medium text-white leading-none">
                 {link.label}
               </span>
             </a>

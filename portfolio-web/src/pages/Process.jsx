@@ -78,9 +78,10 @@ function Processpage() {
     <section className="flex noise-bg overflow-hidden justify-center pt-13 lg:pt-0" id="process">
       <div className="w-[90%] max-w-300 text-white flex flex-col gap-12 lg:gap-10 py-10">
         {steps.map((s) => (
-          <div key={s.number} className="w-full py-0 lg:py-10 ">
+          <div key={s.number} className="w-full py-0 lg:py-10">
             <div>
-              <h1 className="uppercase text-[23px] xl:text-[64px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-syne font-extrabold overflow-hidden">
+              <h1 className="uppercase text-[43px] bg xl:text-[110px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-extenda font-semibold tracking-[0.25px] xl:tracking-[-0.16px] leading-none overflow-hidden">
+              {/* <h1 className="uppercase text-[23px] bg-amber-200 xl:text-[110px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-extenda font-semibold xl:tracking-[-0.16px] overflow-hidden"> */}
                 <AnimatedWords text={s.title} step={45} />
               </h1>
               <p className="text-[1.3rem] xl:ml-60 font-medium font-inter lg:ml-40 text-[#B3B3B3] xl:w-190">

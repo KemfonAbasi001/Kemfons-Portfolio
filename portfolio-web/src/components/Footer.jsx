@@ -160,14 +160,14 @@ export function Beforefooter() {
 
   return (
     <section ref={sectionRef} className="noise-bg overflow-hidden flex justify-center pt-10 lg:pt-40 pb-30 w-full">
-      <div className="w-[90%] max-w-300 text-white flex flex-col gap-15 lg:gap-25">
+      <div className="w-[90%] max-w-300 text-white flex flex-col gap-13 lg:gap-25">
         <span className="">
-          <h1 className="uppercase text-[27px] md:text-[40px] lg:text-[60px] lg:leading-18 font-syne font-bold">
+          <h1 className="uppercase text-[38px] md:text-[40px] lg:text-[90px] tracking-wide lg:leading-19 leading-11 font-extenda font-semibold">
             {headline1Words.map((word, i) => (
               <Word key={i} word={word} register={h1WordRefs[i]} />
             ))}
           </h1>
-          <h1 className="uppercase text-[27px] md:text-[40px] lg:text-[60px] lg:leading-18 font-syne font-bold">
+          <h1 className="uppercase text-[38px] md:text-[40px] lg:text-[90px] tracking-wide lg:leading-19 leading-11 font-extenda font-semibold">
             {headline2Words.map((word, i) => (
               <Word key={i} word={word} register={h2WordRefs[i]} />
             ))}

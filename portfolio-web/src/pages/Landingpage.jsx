@@ -44,7 +44,7 @@ function Landingpage() {
                       </h1>
                       <div className="flex flex-col lg:flex-row gap-10 lg:justify-between mt-4">
                           <p className="text-[21px] text-[#FFFFFFB3] leading-[33px] lg:leading-7.5 font-medium tracking-[-0.16px] lg:w-130 font-inter">Building precise, performant digital systems where engineering rigor meets design sensibility. Every interface tells a story of intentional craft.</p>
-                          <a href={resume} className="group font-mono py-2.75 border border-solid border-[rgba(255, 255, 255, 0.2)] text-[rgb(207, 213, 220)] h-fit px-9 self-end">
+                          <a href={resume} className="group font-mono py-2.75 border border-solid border-[rgba(255, 255, 255, 0.2)] text-[rgb(207, 213, 220)] h-fit px-9 self-start">
                               <FlowText text="[OPEN_RESUME]" />
                           </a>
                       </div>
