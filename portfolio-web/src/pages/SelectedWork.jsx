@@ -52,17 +52,17 @@ function useRevealOnce(threshold = 0.2) {
 }
 
 const projects = [
-  {
-    id: "01",
-    title: "DashUI",
-    category: "Template Marketplace",
-    role: "Full stack developer",
-    year: "2026",
-    description:
-      "Explore a collection of beautifully crafted templates, effortlessly customizable, so you can launch in minutes—not start from scratch.",
-    stack: ["React", "Canva", "Tailwind", "Postgres"],
-    url:  "https://hospital-web-site.vercel.app",
-  },
+  // {
+  //   id: "01",
+  //   title: "DashUI",
+  //   category: "Template Marketplace",
+  //   role: "Full stack developer",
+  //   year: "2026",
+  //   description:
+  //     "Explore a collection of beautifully crafted templates, effortlessly customizable, so you can launch in minutes—not start from scratch.",
+  //   stack: ["React", "Canva", "Tailwind", "Postgres"],
+  //   url:  "https://hospital-web-site.vercel.app",
+  // },
   // {
   //   id: "02",
   //   title: "Avenoir",
@@ -75,7 +75,7 @@ const projects = [
   //   url:  "https://avenoir-web-sitee.vercel.app/",
   // },
   {
-  id: "02",
+  id: "01",
   title: "EVORA",
   category: "Electric Mobility Platform",
   role: "Front end developer",
@@ -86,7 +86,7 @@ const projects = [
   url: "https://evora-web-eta.vercel.app/",
 },
   {
-    id: "03",
+    id: "02",
     title: "Velmora",
     category: "Fintech Dashboard",
     role: "Full stack developer",
@@ -97,7 +97,7 @@ const projects = [
     url:  "https://velmora-web-site.vercel.app/",
   },
   {
-    id: "04",
+    id: "03",
     title: "Hospital",
     category: "Healthcare Platform",
     role: "Front end developer",
