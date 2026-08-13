@@ -80,7 +80,7 @@ function Processpage() {
         {steps.map((s) => (
           <div key={s.number} className="w-full py-0 lg:py-10">
             <div>
-              <h1 className="uppercase text-[43px] bg xl:text-[110px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-extenda font-semibold tracking-[0.25px] xl:tracking-[-0.16px] leading-none overflow-hidden">
+              <h1 className="uppercase text-[48px] bg xl:text-[110px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-extenda font-semibold tracking-[0.25px] xl:tracking-[-0.16px] leading-none overflow-hidden">
               {/* <h1 className="uppercase text-[23px] bg-amber-200 xl:text-[110px] md:text-[40px] lg:text-[45px] lg:ml-5 xl:ml-10 font-extenda font-semibold xl:tracking-[-0.16px] overflow-hidden"> */}
                 <AnimatedWords text={s.title} step={45} />
               </h1>
